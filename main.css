@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Стиль самого header */
+.header {
+    background-image: url("images/fon.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 5px solid #000;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 90%;
+}
+
+
+/* Блок навигации (общий контейнер для лого и меню) - здесь ОДИН градиент */
+.main-nav {
+    display: flex;
+    width: 95%;
+    background: linear-gradient(90deg, #0263A4, #825D26); /* общий градиент */
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+/* Логотип - убрал градиент и аккантовку */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: transparent; /* прозрачный фон */
+    padding: 10px;
+    width: 70px;
+    height: auto;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    font-family: American Typewriter, serif;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Контейнер со ссылками меню */
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* Стиль ссылок */
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+
+/*стиль для фона*/
+
+html, body {
+    height: 100%;        /* Растягиваем на весь экран */
+    margin: 0;           /* Убираем отступы */
+}
+
+body {
+    padding: 10px 6%;
+    background: linear-gradient(180deg, #0263A4, #895702) fixed;
+}
+
+.film {
+  color: gold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px
+
+}
+.movie-item1 {
+background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+  height: 530px;
+} 
+.movie-item1 img{
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.movie-item2 {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+  height: 530px;
+} 
+.movie-item2 img{
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.movie-item3 {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+  height: 530px;
+}
+.movie-item3 img{
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.movies-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.Ofilme1 {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+}
+.Ofilme2 {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+}
+.Ofilme3 {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+}
+.top {
+  color: #F0E68C;
+  font-size: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+.top::-webkit-details-marker {
+    display: none;
+}
+.top:hover {
+    opacity: 0.8;
+    color: #ffd700;
+    text-decoration: underline;
+}
