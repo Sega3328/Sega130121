@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Картинки не вылезают за экран */
+}
 html {
     scroll-behavior: smooth;
 }
