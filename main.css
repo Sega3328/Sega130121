@@ -1,32 +1,18 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Убираем горизонтальную прокрутку */
-}
-
-img {
-  max-width: 100%;
-  height: auto; /* Картинки не вылезают за экран */
-}
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
 }
 /* Стиль самого header */
 .header {
-    background-image: url("images/fon.jpg");
-    height: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
-    border: 5px solid #000;
     padding: 10px 10px;
     position: fixed;
+    z-index: 100;
     top: 0;
-    width: 90%;
+    width: 100%;
+    left: 0;
 }
 
 
@@ -96,10 +82,20 @@ html, body {
     height: 100%;        /* Растягиваем на весь экран */
     margin: 0;           /* Убираем отступы */
 }
-
 body {
-    padding: 10px 6%;
-    background: linear-gradient(180deg, #0263A4, #895702) fixed;
+padding: 10px 6%;
+background: linear-gradient(180deg, #0263A4, #895702) fixed;
+}
+.hero-content {
+    width: 100%;
+    margin: 50px auto;
+    text-align:left;
+    top: 0;
+    color: #F0E68C;
+    padding: 60px;
+    box-sizing: border-box;
+
+
 }
 
 .film {
@@ -107,6 +103,11 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px
+}
+.section {
+  margin-top: 120px;
+  margin-bottom: 15px;
+  width: 100%
 
 }
 .movie-item1 {
@@ -125,6 +126,8 @@ background-color: rgb(29, 51, 58);
   width: 100%;
   height: auto;
   max-width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .movie-item2 {
@@ -143,6 +146,8 @@ background-color: rgb(29, 51, 58);
   width: 100%;
   height: auto;
   max-width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .movie-item3 {
@@ -161,12 +166,15 @@ background-color: rgb(29, 51, 58);
   width: 100%;
   height: auto;
   max-width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .movies-list {
   display: flex;
   gap: 20px;
   justify-content: space-around;
+  width: 100%
 }
 
 .Ofilme1 {
@@ -178,6 +186,8 @@ background-color: rgb(29, 51, 58);
   color: #F0E68C; 
   font-size: 18px;
   position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .Ofilme2 {
   background-color: rgb(29, 51, 58);
@@ -188,6 +198,8 @@ background-color: rgb(29, 51, 58);
   color: #F0E68C; 
   font-size: 18px;
   position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .Ofilme3 {
   background-color: rgb(29, 51, 58);
@@ -198,6 +210,8 @@ background-color: rgb(29, 51, 58);
   color: #F0E68C; 
   font-size: 18px;
   position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .top {
   color: #F0E68C;
@@ -212,4 +226,41 @@ background-color: rgb(29, 51, 58);
     opacity: 0.8;
     color: #ffd700;
     text-decoration: underline;
+}
+
+/* Стиль для блока "Персонажи" */
+
+.personagi {
+  color: gold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.personagi-item {
+  background-color: rgb(29, 51, 58);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: #F0E68C; 
+  font-size: 18px;
+  position: relative;
+  height: 500px;
+  margin: 10px 20px;
+}
+.persona-img{
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  max-width: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.personagi-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%
 }
